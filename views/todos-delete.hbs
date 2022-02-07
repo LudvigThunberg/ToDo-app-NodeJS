@@ -1,0 +1,17 @@
+<div class="main-container">
+    <h2>Delete to do</h2>
+    <div class="todos-container">
+        <div class="single-todo">
+            <p class="date">Date created: {{created}}</p>
+            <div class="single-todo-container">
+                <p>ToDo: {{title}}</p>
+                <p>Description: {{description}}</p>
+                <div class="todo-links">
+                    <form action="/todos/{{id}}/delete" method="post">
+                        <input class="todo-links-style" type="submit" value="Delete">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
